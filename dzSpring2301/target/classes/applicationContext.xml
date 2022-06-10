@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:property-placeholder location="classpath:car.properties"></context:property-placeholder>
+
+    <bean id="car1"
+          class="dz.Car">
+        <property name="mark" value="${car1.mark}"/>
+        <property name="maxSpeed" value="${car1.maxSpeed}"/>
+    </bean>
+    <bean id="car2"
+          class="dz.Car">
+        <property name="mark" value="${car2.mark}"></property>
+        <property name="maxSpeed" value="${car2.maxSpeed}"></property>
+    </bean>
+    <bean id="car3"
+          class="dz.Car">
+        <property name="mark" value="${car3.mark}"></property>
+        <property name="maxSpeed" value="${car3.maxSpeed}"></property>
+    </bean>
+    <bean id="car4"
+          class="dz.Car">
+        <property name="mark" value="${car4.mark}"></property>
+        <property name="maxSpeed" value="${car4.maxSpeed}"></property>
+    </bean>
+    <bean id="car5"
+          class="dz.Car">
+        <property name="mark" value="${car5.mark}"></property>
+        <property name="maxSpeed" value="${car5.maxSpeed}"></property>
+    </bean>
+    <bean id="person"
+          class="dz.Person">
+        <property name="name" value="Dmitriy"></property>
+        <property name="carList">
+            <list>
+                <ref bean="car1"></ref>
+                <ref bean="car2"></ref>
+                <ref bean="car3"></ref>
+                <ref bean="car4"></ref>
+                <ref bean="car5"></ref>
+            </list>
+        </property>
+    </bean>
+</beans>

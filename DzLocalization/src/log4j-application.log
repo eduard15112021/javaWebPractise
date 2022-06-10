@@ -1,0 +1,6 @@
+2022-02-16 20:55:48 INFO  MainExample:15 - serg
+2022-02-16 20:55:48 DEBUG MainExample:18 - this is debug : serg
+2022-02-16 20:55:48 INFO  MainExample:22 - this is info : serg
+2022-02-16 20:55:48 WARN  MainExample:25 - this is warn : serg
+2022-02-16 20:55:48 ERROR MainExample:26 - this is error : serg
+2022-02-16 20:55:48 FATAL MainExample:27 - this is fatal : serg

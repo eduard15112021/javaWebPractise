@@ -1,0 +1,5 @@
+com\maven\springSecurity\controller\MyController.class
+com\maven\springSecurity\config\SecurityWebApplicationInitializer.class
+com\maven\springSecurity\config\MyWebApplicationInitializer.class
+com\maven\springSecurity\config\WebConfig.class
+com\maven\springSecurity\config\WebSecurityConfig.class
